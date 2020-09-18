@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pousada LM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="_javascript/funcoes.js"></script>
+
+</head>
+
+<body onLoad="slide1(), carregar()">
+
+
+    <div id="interface" >
+        <header>
+
+            <!--Logo da Pousada-->
+
+            <div id="cabecalho">
+
+                <div id="fundo">
+
+                    <img id="imagem" src="imagens/por-do-sol.jpg" alt="">
+
+                    <div id="menu">
+
+                        <h1> Pousada LM</h1>
+
+                        <a class="menus" href="Pousada LM.html">Home</a>
+                        <a class="menus" href="Sobre.html">Sobre</a>
+                        <a class="menus" href="Galeria de Imagens.html">Galeria de  imagens</a>
+                        <a class="menus" href="Pontos Turísticos.html">Pontos   Turísticos</a>
+                        <a class="menus" href="Contato.html">Contato</a>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <section id="secao">
+
+            <img id="foto" src="imagens/frente.jpg" alt="fachada">
+
+            <!--Calendário-->
+            <div id="calendar">
+                <fieldset id="in"><label for="chec"><strong> Entrada:&nbsp;</strong></label><input type="date"
+                        id="checkin" />
+                </fieldset>
+
+                <fieldset id="out"><label for="chec"><strong> Saída:&nbsp;</strong></label><input type="date"
+                        id="checkout" />
+                </fieldset>
+                <p><input type="button" id="somar" value="Somar" onclick="somar()" /></p>
+                
+                <div id=valor><strong>Valor a pagar:</strong>
+                    <div id="tempo"></div>
+                </div>
+
+            </div>
+
+
+            <!--Opções de quartos-->
+
+            <div id="opcoes">
+
+                <div class="opc">
+                    <label for="simples">
+                        <img src="imagens/quarto-simples1.jpg" alt="" width="300" height="350"></br>
+                        <input id="simples" type="radio" name="opcao" value="simples" />Quarto Simples</label>
+                </div>
+
+                <div class="opc">
+                    <label for="casal">
+                        <img src="imagens/quarto-casal.jpg" alt="" width="300" height="350"></br>
+                        <input id="casal" type="radio" name="opcao" value="casal" />Quarto Casal</label>
+                </div>
+
+                <div class="opc">
+                    <label for="familia">
+                        <img src="imagens/quarto-familia.jpg" alt="" width="300" height="350">
+                        <input id="familia" type="radio" name="opcao" value="familia" />Quarto Familia</label>
+                </div>
+
+                <div class="opc">
+                    <label for="suite">
+                        <img src="imagens/suite.jpg" alt="" width="300" height="350">
+                        <input id="suite" type="radio" name="opcao" value="suite" />Suite</label>
+                </div>
+
+            </div>
+        </section>
+
+        <!--bloco de informações-->
+
+        <footer>
+
+            <div class="elementos">
+                <img class="objetos" src="imagens/wifi.png" >
+                
+                <p> WIfi Gratuito Acesso Wi-Fi disponível em todas as áreas, gratuitamente..</p>
+            </div>
+            <div class="elementos">
+                <img class="objetos" src="imagens/bike.png" >
+                <p> Lazer diversão
+                    Empréstimo de Bicicletas (Adulto, infantil, cadeirinha para criança)
+                    
+                   </p>
+            </div>
+
+            <div class="elementos">
+                <img class="objetos" src="imagens/comida.png" >
+                <p> Comidas e bebidas
+                    Café da manhã estilo colonial, cardápio de bebidas, cozinha compartilhada e churrasqueira.</p>
+            </div>
+
+            <div class="elementos">
+                <img class="objetos" src="imagens/animais.png" >
+                <p>Animais de estimação
+                    Pets de porte pequeno permitidos mediante pedido. Sem custos adicionais.</p>
+            </div>
+
+            <div>
+                <p id="cop">&copy; Luciano e Marlon</p>
+                <a href="http://facebook.com/pousadalm" target="_blank">Facebook</a>
+                <a href="http:twiter.com/pousadalm" target="_blank">Twitter</a></p>
+            </div>
+        </footer>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
